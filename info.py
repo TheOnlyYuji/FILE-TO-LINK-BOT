@@ -20,15 +20,15 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/cantarellabots')
 HOW_TO_OPEN = environ.get('HOW_TO_OPEN', 'https://t.me/cantarellabots')
 
 # 📢 __Log Channels__
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", ''))
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-'))
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", ''))
-VERIFIED_LOG = int(environ.get('VERIFIED_LOG', ''))
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", ""))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", '-1003701641670'))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", '-1003701641670'))
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", '-1003701641670'))
+VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1003701641670'))
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "t.me/Anime_Kyoto"))
 
 # ✅ __Feature Toggles__
 VERIFY = False  # Enable user verification
-FSUB = environ.get("FSUB", True)  # Force Subscribe
+FSUB = environ.get("FSUB", False)  # Force Subscribe
 ENABLE_LIMIT = environ.get("ENABLE_LIMIT", True)
 BATCH_VERIFY = False
 IS_SHORTLINK = False
@@ -42,7 +42,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
 SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 # 💾 __Database Configuration__
-DB_URL = environ.get('DATABASE_URI', "")
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://botskingdom2:t7ognZuINrNfH3tj@cluster0.ystdy4m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get('DATABASE_NAME', "rexlinkbot")
 
 # 📸 __Media & Images__
