@@ -3,15 +3,15 @@ from Script import script
 
 # 🚀 __Bot Configuration__
 SESSION = environ.get('SESSION', 'RexBots')  # Session name
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+API_ID = int(environ.get('API_ID', '36428426'))
+API_HASH = environ.get('API_HASH', '30cba30aa38699e77ce264365e327528')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8329679720:AAESwrQBnQpQxsmO9NMgITIP-_1bgBMwKUk')
 
 # 👑 __Owner & Admins__
-ADMINS = [int(i) for i in environ.get('ADMINS', '').split()]
+ADMINS = [int(i) for i in environ.get('ADMINS', '7957802698').split()]
 AUTH_CHANNEL = [int(i) for i in environ.get("AUTH_CHANNEL", "").split()]
-OWNER_USERNAME = environ.get("OWNER_USERNAME", 'CantarellaBots')
-BOT_USERNAME = environ.get("BOT_USERNAME", 'CantarellaBots')
+OWNER_USERNAME = environ.get("OWNER_USERNAME", 'Nyx_LostCore')
+BOT_USERNAME = environ.get("BOT_USERNAME", 'Lost_File2Link_Bot')
 
 # 🔗 __Channel & Support Links__
 CHANNEL = environ.get('CHANNEL', 'https://t.me/cantarellabots')
