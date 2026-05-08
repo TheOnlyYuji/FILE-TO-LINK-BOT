@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "env": {
+    "TELEGRAM_BOT_TOKEN": "@TELEGRAM_BOT_TOKEN",
+    "API_ID": "@API_ID",
+    "API_HASH": "@API_HASH",
+    "LOG_CHANNEL": "@LOG_CHANNEL",
+    "ADMINS": "@ADMINS",
+    "SUPPORT_GROUP": "@SUPPORT_GROUP",
+    "MONGO_DB_URI": "@MONGO_DB_URI",
+    "ON_HEROKU": false,
+    "PORT": 8080
+  },
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ],
+  "functions": {
+    "app.py": {
+      "memory": 1024,
+      "maxDuration": 900
+    }
+  }
+}
