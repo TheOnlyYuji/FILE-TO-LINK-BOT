@@ -1,0 +1,20 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "file-to-link-bot"
+version = "1.0.0"
+description = "Telegram Direct Media Link Generator"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pyrogram",
+    "motor",
+    "pydantic",
+    "aiohttp",
+    "jinja2"
+]
+
+[tool.vercel]
+entrypoint = "app/main.py"
